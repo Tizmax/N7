@@ -1,0 +1,108 @@
+Auteur 1 (exercice 1 & 3) : Matthis Bernardini
+Auteur 2 (exercice 2)     : Elisa Ciocarlan
+
+Vous devez répondre de manière courte aux questions suivantes.
+Il n'est pas demandé de modifier le programme que vous avez écrit mais
+simplement d'expliquer les modifications qu'il faudrait y apporter.
+
+Il faut remplacer les « ... » par votre réponse en laissant les lignes
+blanches avant et après.
+
+--------------------------------------------------------------------------------
+C1. Que se passe-t-il si dans Jeu_Devin_Exo2 l'utilisateur répond d'abord trop
+grand puis toujours trop petit ?
+--------------------------------------------------------------------------------
+
+Réponse : L'ordinateur dit à l'utilisateur qu'il triche et met fin à la partie.
+
+
+--------------------------------------------------------------------------------
+C2. Est-on sûr que Jeu_Devin_Exo1 se termine ?  Quel argument peut-on donner ?
+--------------------------------------------------------------------------------
+
+Réponse : Jeu_Devin_Exo1 ne se termine pas nécessairement étant donné que 
+l'utilisateur peu donné des valeurs éronnés autant qu'il le souhaite ce qui 
+ne mettra jamais fin à la boucle de jeu.
+
+
+--------------------------------------------------------------------------------
+C3. Est-on sûr que Jeu_Devin_Exo2 se termine ?  Quel argument peut-on donner ?
+--------------------------------------------------------------------------------
+
+Réponse : Oui car soit l'ordinateur trouve le nombre, soit l'utilisateur triche
+et l'ordinateur le voit et met fin à la partie.
+
+
+--------------------------------------------------------------------------------
+F1. Les noms Jeu_Devin_Exo1, Jeu_Devin_Exo2 et Jeu_Devin_Exo3 ne sont pas très
+parlants.  Par quoi pourrait-on les remplacer ?
+--------------------------------------------------------------------------------
+
+Réponse : On peut remplacer Jeu_Devin_Exo1 par Humain_devine, 
+Jeu_Devin_Exo2 par Ordinateur_devine,
+et Jeu_Devin_Exo3 par Jeu_Devin_Complet.
+
+
+--------------------------------------------------------------------------------
+E1. Quelles sont les modifications à apporter à votre programme pour chercher
+des nombres compris entre 1 et 9999 ?
+--------------------------------------------------------------------------------
+
+Réponse : La valeur 999 est à remplacer par 9999 dans la définition du package 
+aléa, dans la définition de la variable max, ainsi que dans quelques "Put_Line()"
+
+
+--------------------------------------------------------------------------------
+E2. Quelles sont les modifications à apporter pour que que l'utilisateur
+puisse utiliser aussi les caractères <, > et = pour indiquer si le nombre
+proposé est trop petit, trop grand ou le bon ?
+--------------------------------------------------------------------------------
+
+Réponse : Dans la structure conditionnelle SINON, il faut ajouter la valeur '<'
+pour when "trop grand", la valeur '>' pour when "trop petit" et '=' pour when 
+"trouvé".
+
+
+--------------------------------------------------------------------------------
+E3. On veut limiter le nombre de tentatives à 10.  Si le nombre n'a pas été
+trouvé avant, le joueur a perdu.  Comment prendre en compte cette évolution ?
+--------------------------------------------------------------------------------
+
+Réponse : Un compteur est déjà mis en place pour chaque proposition faite donc
+il suffit d'ajouter un condition "cpt>=10" pour arrêter la boucle.
+
+
+--------------------------------------------------------------------------------
+E4. La recherche dichotomique conduit à toujours proposer les mêmes nombres.
+Comment faire pour donner l'impression que le programme joue comme un humain
+tout en restant efficace ?
+--------------------------------------------------------------------------------
+
+Réponse : On pourrait utiliser alea et proposer la valeur du milieu plus ou 
+moins une valeur aléatoire de telle manière à ce que le nombre proposé soit 
+compris entre min et max.
+
+
+--------------------------------------------------------------------------------
+E5. Actuellement, l'utilisateur doit attendre la fin d'un jeu pour quitter le
+programme.  On veut qu'il puisse le faire dès qu'il saisit 0 quand on lui pose
+une question. Le programme doit alors dire que l'utilisateur a abandonné la
+partie.  Comment faire ?
+--------------------------------------------------------------------------------
+
+Réponse : Il faut ajouter une ligne dans la structure conditionnelle SELON 
+du traitement des réponses afin que l'ordinateur propose d'abandonner si
+l'utilisateur entre '0' au clavier.
+
+
+--------------------------------------------------------------------------------
+E6. Quand le programme détecte que l'utilisateur a triché, comment faire pour
+que le programme explique au joueur quand il a triché ?
+--------------------------------------------------------------------------------
+
+Réponse : Lorsque que l'ordinateur détermine que l'utilisateur triche, il peut
+expliquer que l'utilisateur a triché lorsqu'il a dit que 500 était trop grand
+ou trop petit.
+
+
+--------------------------------------------------------------------------------

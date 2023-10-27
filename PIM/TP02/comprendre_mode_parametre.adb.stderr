@@ -1,0 +1,7 @@
+comprendre_mode_parametre.adb:25:12: warning: variable "B" is read but never assigned [-gnatwv]
+comprendre_mode_parametre.adb:25:15: warning: variable "R" is assigned but never read [-gnatwm]
+comprendre_mode_parametre.adb:40:24: warning: "A" modified by call, but value might not be referenced [-gnatwm]
+comprendre_mode_parametre.adb:65:14: warning: "C2" may be referenced before it has a value [enabled by default]
+comprendre_mode_parametre.adb:73:01: warning: variable "A" is read but never assigned [-gnatwv]
+comprendre_mode_parametre.adb:77:47: warning: "B1" may be referenced before it has a value [enabled by default]
+comprendre_mode_parametre.adb:77:50: warning: "B2" may be referenced before it has a value [enabled by default]
